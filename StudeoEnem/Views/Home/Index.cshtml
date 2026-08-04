@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<section class="inicio">
+    <!-- Apresentação -->
+    <div class="apresentacao">
+        <h1>Curso ENEM</h1>
+
+        <p>
+            Organize seus estudos, acompanhe seu desempenho e conquiste sua aprovação.
+        </p>
+    </div>
+
+    <!-- Cartões -->
+    <div class="area-cartoes">
+
+        <!-- Cartão Planejamento -->
+        <a class="cartao" asp-controller="Home" asp-action="PrimeirosPassos">
+            <div class="icone-cartao">▣</div>
+
+            <h2>Planejamento</h2>
+
+            <p>
+                Monte sua rotina de estudos<br />
+                com cronogramas personalizados.
+            </p>
+        </a>
+
+        <!-- Cartão Desempenho -->
+        <a class="cartao" asp-controller="Home" asp-action="Desempenho">
+            <div class="icone-cartao">▥</div>
+
+            <h2>Desempenho</h2>
+
+            <p>
+                Veja sua evolução e identifique<br />
+                pontos de melhoria.
+            </p>
+        </a>
+
+        <!-- Cartão Tarefas -->
+        <a class="cartao" asp-controller="Home" asp-action="Tarefas">
+            <div class="icone-cartao">☑</div>
+
+            <h2>Tarefas</h2>
+
+            <p>
+                Organize atividades e prazos<br />
+                de forma simples e eficiente.
+            </p>
+        </a>
+
+    </div>
+</section>
+
+<section class="quem-somos">
+    <div class="conteudo-quem-somos">
+        <h2>Quem somos?</h2>
+
+        <p>
+            Somos estudantes do curso de Desenvolvimento de Sistemas da
+            Etec Comendador João Rays, responsáveis pelo desenvolvimento desta
+            plataforma como Trabalho de Conclusão de Curso (TCC).
+        </p>
+
+        <p>
+            Buscamos ajudar outros estudantes a se prepararem para o ENEM de
+            forma organizada e efetiva, utilizando as ferramentas de
+            planejamento, acompanhamento e gestão de tarefas que aplicamos e
+            desenvolvemos como parte do nosso processo de aprendizagem e
+            formação acadêmica.
+        </p>
+    </div>
+</section>
+
+<!-- ==========================
+     NOSSOS OBJETIVOS
+     ========================== -->
+
+<section class="objetivos">
+    <h2>Nossos Objetivos:</h2>
+
+    <div class="area-objetivos">
+
+        <!-- Objetivo 1 -->
+        <div class="cartao-objetivo">
+            <div class="icone-objetivo">✓</div>
+
+            <h3>Organização de estudos</h3>
+
+            <p>
+                Auxiliar estudantes a criarem uma<br />
+                rotina de estudos eficiente e<br />
+                personalizada.
+            </p>
+        </div>
+
+        <!-- Objetivo 2 -->
+        <div class="cartao-objetivo">
+            <div class="icone-objetivo">▟</div>
+
+            <h3>Melhoria de desempenho</h3>
+
+            <p>
+                Monitorar o progresso do aluno,<br />
+                identificando pontos fortes e áreas<br />
+                de melhoria.
+            </p>
+        </div>
+
+        <!-- Objetivo 3 -->
+        <div class="cartao-objetivo">
+            <div class="icone-objetivo">◷</div>
+
+            <h3>Constância e disciplina</h3>
+
+            <p>
+                Incentivar a constância nos<br />
+                estudos para promover um<br />
+                aprendizado contínuo.
+            </p>
+        </div>
+
+    </div>
+</section>

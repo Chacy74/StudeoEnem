@@ -1,0 +1,492 @@
+/* Define o tamanho padrão da fonte do site */
+html {
+  font-size: 14px;
+}
+
+/* Em telas maiores (tablets e PCs),
+   aumenta o tamanho da fonte */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Efeito de foco em botões, links e campos de formulário */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white,
+              0 0 0 0.25rem #258cfb;
+}
+
+/* Garante que o HTML ocupe pelo menos toda a altura da tela */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Espaço reservado para o rodapé */
+body {
+  margin-bottom: 60px;
+}
+
+/* ==========================
+   CORES DO SEU SITE
+   ========================== */
+
+/* Cor de fundo de todo o site */
+body {
+  background-color: #D9D9D9;
+}
+
+/* Cor do cabeçalho (navbar) */
+.navbar {
+  background-color: #1E3A8A !important;
+}
+
+/* Cor do texto do cabeçalho */
+.navbar-brand,
+.nav-link,
+.navbar a {
+  color: white !important;
+}
+
+/* Cor ao passar o mouse sobre os links */
+.navbar-brand:hover,
+.nav-link:hover,
+.navbar a:hover {
+  color: #FFD700 !important;
+}
+
+/* ==========================
+   FORMULÁRIOS
+   ========================== */
+
+/* Cor do placeholder dos campos */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+/* Alinhamento do placeholder quando o campo recebe foco */
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* ==========================
+   PÁGINA INICIAL
+   ========================== */
+
+/* Área completa da página inicial */
+.inicio {
+  width: 100%;
+  padding: 12px 20px 40px;
+  text-align: center;
+}
+
+/* ==========================
+   APRESENTAÇÃO
+   ========================== */
+
+/* Título Curso ENEM */
+.apresentacao h1 {
+  margin: 0 0 22px;
+  color: #0c0b3d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* Texto abaixo do título */
+.apresentacao p {
+  margin: 0;
+  color: #0c0b3d;
+  font-size: 16px;
+}
+
+/* ==========================
+   ÁREA DOS CARTÕES
+   ========================== */
+
+/* Organiza os três cartões na horizontal */
+.area-cartoes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 45px;
+  margin-top: 16px;
+}
+
+/* Aparência de cada cartão */
+.cartao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 226px;
+  min-height: 186px;
+  padding: 24px 15px;
+
+  background-color: #ffffff;
+  border-radius: 7px;
+
+  color: #0c0b3d;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.cartao:hover {
+  color: #0c0b3d;
+  text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícone do cartão */
+.icone-cartao {
+  margin-bottom: 12px;
+  color: #000000;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Título dentro dos cartões */
+.cartao h2 {
+  margin: 0 0 17px;
+  color: #0c0b3d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Descrição dentro dos cartões */
+.cartao p {
+  margin: 0;
+  color: #0c0b3d;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+/* Em telas menores, coloca os cartões um abaixo do outro */
+@media (max-width: 850px) {
+  .area-cartoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cartao {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+/* ==========================
+   SEÇÃO QUEM SOMOS
+   ========================== */
+
+/* Fundo branco ocupando toda a largura */
+.quem-somos {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 16px 20px 20px;
+  text-align: center;
+}
+
+/* Limita a largura do texto e centraliza o conteúdo */
+.conteudo-quem-somos {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Título da seção */
+.conteudo-quem-somos h2 {
+  margin: 0 0 8px;
+  color: #0c0b3d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Parágrafos da seção */
+.conteudo-quem-somos p {
+  margin: 0 auto 22px;
+  color: #0c0b3d;
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* Remove a margem do último parágrafo */
+.conteudo-quem-somos p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================
+   CONFIGURAÇÃO GERAL
+   ========================== */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+  color: #080638;
+}
+
+/* ==========================
+   SEÇÃO QUEM SOMOS
+   ========================== */
+
+.quem-somos {
+  width: 100%;
+  padding: 16px 20px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.conteudo-quem-somos {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.conteudo-quem-somos h2 {
+  margin: 0 0 10px;
+  color: #080638;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.conteudo-quem-somos p {
+  margin: 0 auto 22px;
+  color: #080638;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.conteudo-quem-somos p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================
+   NOSSOS OBJETIVOS
+   ========================== */
+
+/* Área cinza da seção */
+.objetivos {
+  width: 100%;
+  padding: 40px 20px 48px;
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
+/* Título da seção */
+.objetivos h2 {
+  margin: 0 0 40px;
+  color: #080638;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+/* Organiza os três objetivos horizontalmente */
+.area-objetivos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 35px;
+}
+
+/* Aparência de cada cartão */
+.cartao-objetivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 226px;
+  min-height: 186px;
+  padding: 24px 15px;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+/* Ícones dos cartões */
+.icone-objetivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+  margin-bottom: 12px;
+
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Título de cada cartão */
+.cartao-objetivo h3 {
+  margin: 0 0 9px;
+  color: #080638;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Descrição de cada cartão */
+.cartao-objetivo p {
+  margin: 0;
+  color: #080638;
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+@media (max-width: 768px) {
+  .area-objetivos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cartao-objetivo {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ==========================
+   RODAPÉ
+   ========================== */
+
+.rodape {
+  width: 100%;
+  min-height: 24px;
+  padding: 3px 20px;
+  background-color: #1E3A8A;
+  border-top: 2px solid #111111;
+  color: #FFD700;
+}
+
+/* Distribui os três grupos do rodapé */
+.conteudo-rodape {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Texto dos direitos autorais */
+.direitos-rodape {
+  justify-self: start;
+
+  color: #FFD700;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Grupo das bandeiras */
+.idiomas-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+/* Bandeiras como botões */
+.botao-bandeira {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Grupo de redes sociais */
+.redes-rodape {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 12px;
+
+  color: #FFD700;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Ícones das redes */
+.rede {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Cor do WhatsApp */
+.whatsapp {
+  background-color: #25D366;
+}
+
+/* Cor do Instagram */
+.instagram {
+  background-color: #E1306C;
+}
+
+/* Mantém os ícones brancos ao passar o mouse */
+.rede:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+/* Rodapé em telas menores */
+@media (max-width: 768px) {
+  .conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .direitos-rodape,
+  .redes-rodape {
+    justify-self: auto;
+    text-align: center;
+  }
+}
