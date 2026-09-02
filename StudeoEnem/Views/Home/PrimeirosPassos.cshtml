@@ -1,6 +1,321 @@
 ﻿@{
     ViewData["Title"] = "Primeiros Passos";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="pagina-primeiros-passos">
+
+    <!-- ==========================
+         APRESENTAÇÃO
+         ========================== -->
+    <section class="pp-apresentacao">
+        <div class="pp-apresentacao-conteudo">
+            <div class="pp-apresentacao-texto">
+                <h1>Primeiros Passos</h1>
+
+                <p>
+                    Siga este guia rápido para entender como utilizar o Studeo ENEM
+                    e aproveitar ao máximo todas as funcionalidades.
+                </p>
+            </div>
+
+            <div class="pp-ilustracao" aria-hidden="true">
+                <div class="pp-prancheta">
+                    <div class="pp-presilha"></div>
+
+                    <div class="pp-linha">
+                        <span>✓</span>
+                        <i></i>
+                    </div>
+
+                    <div class="pp-linha">
+                        <span>✓</span>
+                        <i></i>
+                    </div>
+
+                    <div class="pp-linha">
+                        <span>✓</span>
+                        <i></i>
+                    </div>
+
+                    <div class="pp-linha">
+                        <span>✓</span>
+                        <i></i>
+                    </div>
+
+                    <div class="pp-lapis">✎</div>
+                    <div class="pp-planta">♣</div>
+                    <div class="pp-confirmacao">✓</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pp-conteudo">
+
+        <!-- ==========================
+             COMEÇANDO SUA JORNADA
+             ========================== -->
+        <section class="pp-secao">
+            <h2 class="pp-titulo-secao">
+                <span class="pp-titulo-icone">🌎</span>
+                1. Começando sua jornada
+            </h2>
+
+            <div class="pp-passos">
+
+                <article class="pp-passo">
+                    <div class="pp-passo-icone icone-azul">👤</div>
+
+                    <div>
+                        <h3>1. Crie sua conta</h3>
+
+                        <p>
+                            Cadastre-se gratuitamente ou faça login para acessar
+                            sua área de estudos.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="pp-seta">→</div>
+
+                <article class="pp-passo">
+                    <div class="pp-passo-icone icone-amarelo">🎯</div>
+
+                    <div>
+                        <h3>2. Defina seus objetivos</h3>
+
+                        <p>
+                            Na página de Metas, defina seus objetivos e o que
+                            deseja alcançar nos estudos.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="pp-seta">→</div>
+
+                <article class="pp-passo">
+                    <div class="pp-passo-icone icone-azul-claro">📅</div>
+
+                    <div>
+                        <h3>3. Monte seu cronograma</h3>
+
+                        <p>
+                            Acesse o Cronograma para planejar seus dias e
+                            organizar sua rotina de estudos.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================
+             PRINCIPAIS PÁGINAS
+             ========================== -->
+        <section class="pp-secao">
+            <h2 class="pp-titulo-secao">
+                <span class="pp-titulo-icone">📖</span>
+                2. Conheça as principais páginas
+            </h2>
+
+            <div class="pp-grade-paginas">
+
+                <!-- Desempenho -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-azul">🚀</div>
+                        <h3>Desempenho</h3>
+                    </div>
+
+                    <p>
+                        Acompanhe seu progresso geral, tempo de estudo,
+                        desempenho semanal e resumo das suas atividades.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Desempenho"
+                       class="pp-link">
+                        Ir para Desempenho →
+                    </a>
+                </article>
+
+                <!-- Cronograma -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-amarelo">📅</div>
+                        <h3>Cronograma</h3>
+                    </div>
+
+                    <p>
+                        Visualize seu planejamento semanal, horários de estudo
+                        e matérias previstas para cada dia.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Cronograma"
+                       class="pp-link">
+                        Ir para Cronograma →
+                    </a>
+                </article>
+
+                <!-- Metas -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-verde">🎯</div>
+                        <h3>Metas</h3>
+                    </div>
+
+                    <p>
+                        Crie, acompanhe e conclua suas metas de estudo.
+                        Mantenha o foco e veja seu progresso.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Metas"
+                       class="pp-link">
+                        Ir para Metas →
+                    </a>
+                </article>
+
+                <!-- Atividades -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-roxo">✎</div>
+                        <h3>Atividades</h3>
+                    </div>
+
+                    <p>
+                        Gerencie todas as suas atividades, exercícios,
+                        revisões e simulados em um só lugar.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Atividades"
+                       class="pp-link">
+                        Ir para Atividades →
+                    </a>
+                </article>
+
+                <!-- Desempenho -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-amarelo">📊</div>
+                        <h3>Desempenho Detalhado</h3>
+                    </div>
+
+                    <p>
+                        Analise seu desempenho por matéria, acertos,
+                        erros e evolução ao longo do tempo.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Desempenho"
+                       class="pp-link">
+                        Ir para Desempenho →
+                    </a>
+                </article>
+
+                <!-- Notificações -->
+                <article class="pp-cartao-pagina">
+                    <div class="pp-cartao-cabecalho">
+                        <div class="pp-cartao-icone icone-amarelo">🔔</div>
+                        <h3>Notificações</h3>
+                    </div>
+
+                    <p>
+                        Fique por dentro dos lembretes, prazos e atividades
+                        importantes dos seus estudos.
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Notificacoes"
+                       class="pp-link">
+                        Ver Notificações →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================
+             DICAS
+             ========================== -->
+        <section class="pp-secao">
+            <h2 class="pp-titulo-secao">
+                <span class="pp-estrela">★</span>
+                3. Dicas para aproveitar melhor
+            </h2>
+
+            <div class="pp-dicas">
+
+                <article class="pp-dica">
+                    <div class="pp-dica-icone icone-laranja">◷</div>
+
+                    <h3>Seja consistente</h3>
+
+                    <p>
+                        Estude um pouco todos os dias. A consistência é a chave
+                        para a aprovação.
+                    </p>
+                </article>
+
+                <article class="pp-dica">
+                    <div class="pp-dica-icone icone-verde">☷</div>
+
+                    <h3>Planeje com realismo</h3>
+
+                    <p>
+                        Monte um cronograma que caiba na sua rotina e seja
+                        realista com seu tempo.
+                    </p>
+                </article>
+
+                <article class="pp-dica">
+                    <div class="pp-dica-icone icone-azul">📈</div>
+
+                    <h3>Acompanhe seu progresso</h3>
+
+                    <p>
+                        Use os gráficos e relatórios para entender sua evolução
+                        e ajustar seus estudos.
+                    </p>
+                </article>
+
+                <article class="pp-dica">
+                    <div class="pp-dica-icone icone-roxo">🏆</div>
+
+                    <h3>Mantenha o foco</h3>
+
+                    <p>
+                        Cada pequena conquista aproxima você do seu objetivo
+                        final: a sua aprovação!
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================
+             CENTRAL DE AJUDA
+             ========================== -->
+        <section class="pp-ajuda">
+            <div class="pp-ajuda-informacao">
+                <div class="pp-ajuda-icone">?</div>
+
+                <div>
+                    <h2>Ainda tem dúvidas?</h2>
+                    <p>
+                        Acesse nossa seção de ajuda ou entre em contato conosco.
+                    </p>
+                </div>
+            </div>
+
+            <a asp-controller="Home"
+               asp-action="Ajuda"
+               class="pp-botao-ajuda">
+                Central de Ajuda
+            </a>
+        </section>
+
+    </div>
+</div>

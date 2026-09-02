@@ -490,3 +490,595 @@ body {
     text-align: center;
   }
 }
+
+/* ==================================================
+   PÁGINA PRIMEIROS PASSOS
+   ================================================== */
+
+.pagina-primeiros-passos {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7f8fc;
+  color: #10164d;
+}
+
+/* ==================================================
+   APRESENTAÇÃO
+   ================================================== */
+
+.pp-apresentacao {
+  width: 100%;
+  padding: 36px 24px 0;
+  background-color: #ffffff;
+}
+
+.pp-apresentacao-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  width: 100%;
+  max-width: 1180px;
+  min-height: 190px;
+  margin: 0 auto;
+}
+
+.pp-apresentacao-texto {
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.pp-apresentacao-texto h1 {
+  margin: 0 0 18px;
+  color: #121850;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.pp-apresentacao-texto p {
+  max-width: 540px;
+  margin: 0;
+  color: #4a4f66;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ==================================================
+   ILUSTRAÇÃO DO TOPO
+   ================================================== */
+
+.pp-ilustracao {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 280px;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.pp-prancheta {
+  position: relative;
+
+  width: 145px;
+  height: 145px;
+  padding: 30px 20px 15px;
+
+  background-color: #ffffff;
+  border: 8px solid #5479dc;
+  border-radius: 10px;
+  box-shadow: -10px 17px 0 #6d8ce4;
+}
+
+.pp-presilha {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+
+  width: 62px;
+  height: 27px;
+
+  background-color: #343c68;
+  border-radius: 8px;
+  transform: translateX(-50%);
+}
+
+.pp-presilha::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 22px;
+
+  width: 18px;
+  height: 22px;
+
+  background-color: #343c68;
+  border-radius: 9px;
+}
+
+.pp-linha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 11px;
+}
+
+.pp-linha span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #d9f5e7;
+  border-radius: 4px;
+  color: #32b776;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.pp-linha i {
+  display: block;
+
+  width: 54px;
+  height: 5px;
+
+  background-color: #d7dce8;
+  border-radius: 10px;
+}
+
+.pp-lapis {
+  position: absolute;
+  top: 37px;
+  right: -25px;
+
+  color: #f3a900;
+  font-size: 52px;
+  transform: rotate(-32deg);
+}
+
+.pp-planta {
+  position: absolute;
+  right: -58px;
+  bottom: 19px;
+
+  color: #37ad66;
+  font-size: 50px;
+  transform: rotate(-12deg);
+}
+
+.pp-confirmacao {
+  position: absolute;
+  right: -50px;
+  bottom: -4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  background-color: #ffc107;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ==================================================
+   CONTEÚDO PRINCIPAL
+   ================================================== */
+
+.pp-conteudo {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 38px 24px 42px;
+}
+
+.pp-secao {
+  margin-bottom: 48px;
+}
+
+.pp-titulo-secao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 0 24px;
+
+  color: #11174e;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.pp-titulo-icone {
+  font-size: 22px;
+}
+
+.pp-estrela {
+  color: #f2b600;
+  font-size: 26px;
+}
+
+/* ==================================================
+   PASSOS INICIAIS
+   ================================================== */
+
+.pp-passos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pp-passo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  flex: 1;
+  max-width: 340px;
+  min-height: 140px;
+  padding: 24px;
+
+  background-color: #ffffff;
+  border: 1px solid #ebeef5;
+  border-radius: 11px;
+  box-shadow: 0 5px 16px rgba(30, 58, 138, 0.07);
+}
+
+.pp-passo h3 {
+  margin: 0 0 9px;
+  color: #11174e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pp-passo p {
+  margin: 0;
+  color: #555b70;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.pp-passo-icone,
+.pp-cartao-icone,
+.pp-dica-icone {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f3f6ff;
+  border-radius: 50%;
+}
+
+.pp-passo-icone {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+}
+
+.pp-seta {
+  flex: 0 0 38px;
+  color: #b3b9c9;
+  text-align: center;
+  font-size: 27px;
+}
+
+/* ==================================================
+   CARTÕES DAS PÁGINAS
+   ================================================== */
+
+.pp-grade-paginas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pp-cartao-pagina {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 235px;
+  padding: 26px 25px 22px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e8f0;
+  border-radius: 11px;
+  box-shadow: 0 5px 16px rgba(30, 58, 138, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pp-cartao-pagina:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(30, 58, 138, 0.13);
+}
+
+.pp-cartao-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.pp-cartao-icone {
+  width: 54px;
+  height: 54px;
+  font-size: 25px;
+}
+
+.pp-cartao-pagina h3 {
+  margin: 0;
+  color: #11174e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.pp-cartao-pagina p {
+  margin: 0 0 19px 69px;
+  color: #555b70;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.pp-link {
+  margin-top: auto;
+  margin-left: 69px;
+
+  color: #4c36e8;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pp-link:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* ==================================================
+   CORES DOS ÍCONES
+   ================================================== */
+
+.icone-azul {
+  background-color: #edf2ff;
+  color: #2455c7;
+}
+
+.icone-azul-claro {
+  background-color: #ecf6ff;
+  color: #2476ca;
+}
+
+.icone-amarelo {
+  background-color: #fff8dc;
+  color: #e5a900;
+}
+
+.icone-verde {
+  background-color: #eaf9ef;
+  color: #24a35c;
+}
+
+.icone-roxo {
+  background-color: #f2edff;
+  color: #7051de;
+}
+
+.icone-laranja {
+  background-color: #fff6dd;
+  color: #f0a500;
+}
+
+/* ==================================================
+   DICAS
+   ================================================== */
+
+.pp-dicas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 30px 10px;
+
+  background: linear-gradient(90deg, #fff9e8, #fffaf0);
+  border: 1px solid #f6e6ad;
+  border-radius: 11px;
+}
+
+.pp-dica {
+  min-height: 180px;
+  padding: 0 28px;
+  border-right: 1px solid #eee3c7;
+}
+
+.pp-dica:last-child {
+  border-right: none;
+}
+
+.pp-dica-icone {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 17px;
+  font-size: 24px;
+}
+
+.pp-dica h3 {
+  margin: 0 0 13px;
+  color: #11174e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pp-dica p {
+  margin: 0;
+  color: #555b70;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+/* ==================================================
+   CENTRAL DE AJUDA
+   ================================================== */
+
+.pp-ajuda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding: 22px 34px;
+
+  background: linear-gradient(90deg, #edf5ff, #e4edff);
+  border: 1px solid #cbdcff;
+  border-radius: 11px;
+}
+
+.pp-ajuda-informacao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pp-ajuda-icone {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  background-color: #4a7bf0;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.pp-ajuda h2 {
+  margin: 0 0 5px;
+  color: #11174e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pp-ajuda p {
+  margin: 0;
+  color: #555b70;
+  font-size: 12px;
+}
+
+.pp-botao-ajuda {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 190px;
+  padding: 13px 23px;
+
+  background-color: #102d9b;
+  border-radius: 7px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pp-botao-ajuda:hover {
+  background-color: #091f78;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   RESPONSIVIDADE
+   ================================================== */
+
+@media (max-width: 950px) {
+  .pp-grade-paginas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pp-passos {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .pp-passo {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .pp-seta {
+    display: none;
+  }
+
+  .pp-dicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pp-dica {
+    padding: 25px;
+    border-right: none;
+    border-bottom: 1px solid #eee3c7;
+  }
+}
+
+@media (max-width: 650px) {
+  .pp-apresentacao {
+    padding-top: 25px;
+  }
+
+  .pp-apresentacao-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pp-apresentacao-texto {
+    padding-bottom: 0;
+  }
+
+  .pp-apresentacao-texto h1 {
+    font-size: 32px;
+  }
+
+  .pp-ilustracao {
+    align-self: center;
+    transform: scale(0.85);
+  }
+
+  .pp-grade-paginas {
+    grid-template-columns: 1fr;
+  }
+
+  .pp-dicas {
+    grid-template-columns: 1fr;
+  }
+
+  .pp-dica {
+    min-height: auto;
+  }
+
+  .pp-ajuda {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pp-botao-ajuda {
+    width: 100%;
+  }
+}
